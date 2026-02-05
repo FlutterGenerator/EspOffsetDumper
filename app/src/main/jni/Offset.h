@@ -17,7 +17,13 @@ if (!_GetPositionInjected)
     _GetPositionInjected = TransformClass.dump("get_position_Injected", 2);
 
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
-_WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 3);
+_WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 0);
+if (!_WorldToScreenPointIntInjected)
+    _WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 1);
+if (!_WorldToScreenPointIntInjected)
+    _WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 2);
+if (!_WorldToScreenPointIntInjected)
+    _WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 3);
 _Camera = CameraClass.dump("get_main", 0);
 
 }
