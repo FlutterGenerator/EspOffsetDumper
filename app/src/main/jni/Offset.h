@@ -15,6 +15,8 @@ if (!_GetPositionInjected)
     _GetPositionInjected = TransformClass.dump("get_position_Injected", 1);
 if (!_GetPositionInjected)
     _GetPositionInjected = TransformClass.dump("get_position_Injected", 2);
+if (!_GetPositionInjected)
+    _GetPositionInjected = TransformClass.dump("get_position_Injected", 3);
 
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
 _WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected", 0);
