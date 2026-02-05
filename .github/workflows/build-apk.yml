@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        build_type: [debug, release]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -26,7 +30,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build APK
-        run: ./gradlew assembleDebug --warning-mode all
+        run: ./gradlew assemble${{ matrix.build_type }} --warning-mode all
 
       - name: Upload Gradle Problem Report
         uses: actions/upload-artifact@v6
@@ -38,5 +42,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v6
         with:
-          name: EspOffsetDumper-apk-debug-${{ github.run_id }}
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: EspOffsetDumper-apk-${{ matrix.build_type }}-${{ github.run_id }}
+          path: app/build/outputs/apk/${{ matrix.build_type }}/app-${{ matrix.build_type }}.apk
