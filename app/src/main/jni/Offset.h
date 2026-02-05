@@ -10,10 +10,10 @@ Uclass ComponentClass = l2cpp.getClass("UnityEngine", "Component");
 _Transform = ComponentClass.dump("get_transform",0);
 
 Uclass TransformClass = l2cpp.getClass("UnityEngine", "Transform");
-_GetPositionInjected = TransformClass.dump("get_position_Injected",0);
+_GetPositionInjected = TransformClass.dump("get_position_Injected",1);
 
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
-_WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected",0);
+_WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected",2);
 _Camera = CameraClass.dump("get_main",0);
 
 }
