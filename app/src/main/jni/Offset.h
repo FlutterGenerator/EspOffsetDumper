@@ -5,10 +5,12 @@ _GetPositionInjected0,
 _GetPositionInjected1, 
 _GetPositionInjected2, 
 _GetPositionInjected3, 
+_WorldToScreenPointIntInjected, 
 _WorldToScreenPointIntInjected0, 
 _WorldToScreenPointIntInjected1, 
 _WorldToScreenPointIntInjected2, 
 _WorldToScreenPointIntInjected3, 
+_WorldToScreenPointIntInjected4, 
 _Camera;
 
 void getAddress() {
@@ -26,12 +28,14 @@ _GetPositionInjected1 = TransformClass.dump("get_position_Injected", 1);
 _GetPositionInjected2 = TransformClass.dump("get_position_Injected", 2);
 _GetPositionInjected3 = TransformClass.dump("get_position_Injected", 3);
 
-// Unity old and New WorldToScreenPointIntInjected index 0 -> 3
+// Unity old and New WorldToScreenPointIntInjected index 0 -> 4
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
+_WorldToScreenPointIntInjected = CameraClass.dump("WorldToScreenPoint_Injected");
 _WorldToScreenPointIntInjected0 = CameraClass.dump("WorldToScreenPoint_Injected", 0);
 _WorldToScreenPointIntInjected1 = CameraClass.dump("WorldToScreenPoint_Injected", 1);
 _WorldToScreenPointIntInjected2 = CameraClass.dump("WorldToScreenPoint_Injected", 2);
 _WorldToScreenPointIntInjected3 = CameraClass.dump("WorldToScreenPoint_Injected", 3);
+_WorldToScreenPointIntInjected4 = CameraClass.dump("WorldToScreenPoint_Injected", 4);
 
 _Camera = CameraClass.dump("get_main", 0);
 
