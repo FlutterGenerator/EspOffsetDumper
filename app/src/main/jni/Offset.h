@@ -1,7 +1,7 @@
 lib l2cpp;
 Address 
 _Transform, 
-_GetPosition1, 
+_GetPosition0, 
 _GetPositionInjected1, 
 _GetPositionInjected2, 
 _WorldToScreenPointIntInjected3, 
@@ -18,7 +18,7 @@ _Transform = ComponentClass.dump("get_transform", 0);
 
 // Unity old and New GetPositionInjected GetPosition index 0 -> index 1 -> 2
 Uclass TransformClass = l2cpp.getClass("UnityEngine", "Transform");
-_GetPosition1 = TransformClass.dump("get_position", 0);
+_GetPosition0 = TransformClass.dump("get_position", 0);
 _GetPositionInjected1 = TransformClass.dump("get_position_Injected", 1);
 _GetPositionInjected2 = TransformClass.dump("get_position_Injected", 2);
 
