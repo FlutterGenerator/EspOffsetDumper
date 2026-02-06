@@ -108,6 +108,10 @@ Java_com_NepEsp_Offsetdummper_FloatingModMenuService_getFeatureList(JNIEnv *env,
         OBFUSCATE("Category_WorldToScreenPointIntInjected"), //Not counted
         // Unity old and New WorldToScreenPointIntInjected
 
+
+OBFUSCATE("RichTextView_<b>WorldToScreenPoint - index 1</b> - >>"),
+        AddCopyButton(_WorldToScreenPoint1.getOffset()),
+
         OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 3</b> - >>"),
         AddCopyButton(_WorldToScreenPointIntInjected3.getOffset()),
 
