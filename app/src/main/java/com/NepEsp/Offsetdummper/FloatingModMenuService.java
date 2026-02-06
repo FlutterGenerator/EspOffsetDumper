@@ -1108,7 +1108,7 @@ public class FloatingModMenuService extends Service {
     collapseSub.setVerticalGravity(16);
     collapseSub.setPadding(0, 5, 0, 5);
     collapseSub.setOrientation(LinearLayout.VERTICAL);
-    collapseSub.setBackgroundColor(Color.parseColor("#FF222D38"));
+    collapseSub.setBackgroundColor(Color.parseColor("#FFFF0000"));
     collapseSub.setVisibility(View.GONE);
     mCollapse = collapseSub;
 
