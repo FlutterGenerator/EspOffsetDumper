@@ -89,14 +89,66 @@ Java_com_NepEsp_Offsetdummper_FloatingModMenuService_getFeatureList(JNIEnv *env,
     const char *features[] = {
       
         OBFUSCATE("Category_OFFSETS"), //Not counted
+        
+        
         OBFUSCATE("RichTextView_<b>Transform</b> - >>"),
         AddCopyButton(_Transform.getOffset()),
+        
+        
+        OBFUSCATE("Category_GetPositionInjected index 0"), //Not counted
+        // Unity old and New GetPositionInjected
         OBFUSCATE("RichTextView_<b>GetPositionInjected</b> - >>"),
-        AddCopyButton(_GetPositionInjected.getOffset()),
+        AddCopyButton(_GetPositionInjected0.getOffset()),
+        
+        
+        OBFUSCATE("Category_GetPositionInjected index 1"), //Not counted
+        // Unity old and New GetPositionInjected
+        OBFUSCATE("RichTextView_<b>GetPositionInjected</b> - >>"),
+        AddCopyButton(_GetPositionInjected1.getOffset()),
+        
+        
+        OBFUSCATE("Category_GetPositionInjected index 2"), //Not counted
+        // Unity old and New GetPositionInjected
+        OBFUSCATE("RichTextView_<b>GetPositionInjected</b> - >>"),
+        AddCopyButton(_GetPositionInjected2.getOffset()),
+        
+        
+        OBFUSCATE("Category_GetPositionInjected index 3"), //Not counted
+        // Unity old and New GetPositionInjected
+        OBFUSCATE("RichTextView_<b>GetPositionInjected</b> - >>"),
+        AddCopyButton(_GetPositionInjected3.getOffset()),
+        
+        
+        OBFUSCATE("Category_WorldToScreenPointIntInjected index 0"), //Not counted
+        // Unity old and New WorldToScreenPointIntInjected
         OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected.getOffset()),
+        AddCopyButton(_WorldToScreenPointIntInjected0.getOffset()),
+        
+        
+        OBFUSCATE("Category_WorldToScreenPointIntInjected index 1"), //Not counted
+        // Unity old and New WorldToScreenPointIntInjected
+        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
+        AddCopyButton(_WorldToScreenPointIntInjected1.getOffset()),
+        
+        
+        OBFUSCATE("Category_WorldToScreenPointIntInjected index 2"), //Not counted
+        // Unity old and New WorldToScreenPointIntInjected
+        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
+        AddCopyButton(_WorldToScreenPointIntInjected2.getOffset()),
+        
+        
+        OBFUSCATE("Category_WorldToScreenPointIntInjected index 3"), //Not counted
+        // Unity old and New WorldToScreenPointIntInjected
+        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
+        AddCopyButton(_WorldToScreenPointIntInjected3.getOffset()),
+        
+        
+        //Camera
         OBFUSCATE("RichTextView_<b>Camera</b> - >>"),
         AddCopyButton(_Camera.getOffset()),
+        
+        
+        //ButtonLink
         OBFUSCATE("ButtonLink_<b>TELEGRAM</b>_https://t.me/CheaterNeverDies"),
         
         
