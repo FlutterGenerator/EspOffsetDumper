@@ -1,10 +1,12 @@
 lib l2cpp;
 Address 
 _Transform, 
+_GetPositionInjected, 
 _GetPositionInjected0, 
 _GetPositionInjected1, 
 _GetPositionInjected2, 
 _GetPositionInjected3, 
+_GetPositionInjected4, 
 _WorldToScreenPointIntInjected, 
 _WorldToScreenPointIntInjected0, 
 _WorldToScreenPointIntInjected1, 
@@ -21,12 +23,14 @@ l2cpp.open();
 Uclass ComponentClass = l2cpp.getClass("UnityEngine", "Component");
 _Transform = ComponentClass.dump("get_transform", 0);
 
-// Unity old and New GetPositionInjected index 0 -> 3
+// Unity old and New GetPositionInjected index 0 -> 4
 Uclass TransformClass = l2cpp.getClass("UnityEngine", "Transform");
+_GetPositionInjected = TransformClass.dump("get_position_Injected");
 _GetPositionInjected0 = TransformClass.dump("get_position_Injected", 0);
 _GetPositionInjected1 = TransformClass.dump("get_position_Injected", 1);
 _GetPositionInjected2 = TransformClass.dump("get_position_Injected", 2);
 _GetPositionInjected3 = TransformClass.dump("get_position_Injected", 3);
+_GetPositionInjected4 = TransformClass.dump("get_position_Injected", 4);
 
 // Unity old and New WorldToScreenPointIntInjected index 0 -> 4
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
