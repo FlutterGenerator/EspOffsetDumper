@@ -44,7 +44,7 @@ std::string int2Hex(unsigned int intVal)
 
     return std::string("0x") + hexStr;
 }
-const char *AddCopyButton(unsigned int Offset) {
+const char *CollapseAdd_AddCopyButton(unsigned int Offset) {
        char const* word = "COPYBUTTON_";
        char const* worb = int2Hex(Offset).c_str();
     
@@ -94,46 +94,46 @@ Java_com_NepEsp_Offsetdummper_FloatingModMenuService_getFeatureList(JNIEnv *env,
         AddCopyButton(_Transform.getOffset()),
         
         
-        OBFUSCATE("Category_GetPositionInjected"), //Not counted
+        OBFUSCATE("Collapse_GetPositionInjected"), //Not counted
         // Unity old and New GetPositionInjected
-        OBFUSCATE("RichTextView_<b>GetPositionInjected</b> - >>"),
-        AddCopyButton(_GetPositionInjected.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>GetPositionInjected - index 0</b> - >>"),
-        AddCopyButton(_GetPositionInjected0.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected - index 0</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected0.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>GetPositionInjected - index 1</b> - >>"),
-        AddCopyButton(_GetPositionInjected1.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected - index 1</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected1.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>GetPositionInjected - index 2</b> - >>"),
-        AddCopyButton(_GetPositionInjected2.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected - index 2</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected2.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>GetPositionInjected - index 3</b> - >>"),
-        AddCopyButton(_GetPositionInjected3.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected - index 3</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected3.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>GetPositionInjected - index 4</b> - >>"),
-        AddCopyButton(_GetPositionInjected4.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>GetPositionInjected - index 4</b> - >>"),
+        CollapseAdd_AddCopyButton(_GetPositionInjected4.getOffset()),
         
         
-        OBFUSCATE("Category_WorldToScreenPointIntInjected"), //Not counted
+        OBFUSCATE("Collapse_WorldToScreenPointIntInjected"), //Not counted
         // Unity old and New WorldToScreenPointIntInjected
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected.getOffset()),
         
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 0</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected0.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected - index 0</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected0.getOffset()),
 
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 1</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected1.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected - index 1</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected1.getOffset()),
 
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 2</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected2.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected - index 2</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected2.getOffset()),
 
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 3</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected3.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected - index 3</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected3.getOffset()),
 
-        OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 4</b> - >>"),
-        AddCopyButton(_WorldToScreenPointIntInjected4.getOffset()),
+        OBFUSCATE("CollapseAdd_RichTextView_<b>WorldToScreenPointIntInjected - index 4</b> - >>"),
+        CollapseAdd_AddCopyButton(_WorldToScreenPointIntInjected4.getOffset()),
         
         
         //Camera
