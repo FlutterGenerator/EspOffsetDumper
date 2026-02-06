@@ -96,7 +96,7 @@ Java_com_NepEsp_Offsetdummper_FloatingModMenuService_getFeatureList(JNIEnv *env,
         
         OBFUSCATE("Category_GetPositionInjected"), //Not counted
         // Unity old and New GetPositionInjected
-        OBFUSCATE("RichTextView_<b>GetPosition</b> - >>"),
+        OBFUSCATE("RichTextView_<b>GetPosition - index 0</b> - >>"),
         AddCopyButton(_GetPosition0.getOffset()),
                 
         OBFUSCATE("RichTextView_<b>GetPositionInjected - index 1</b> - >>"),
@@ -109,8 +109,8 @@ Java_com_NepEsp_Offsetdummper_FloatingModMenuService_getFeatureList(JNIEnv *env,
         // Unity old and New WorldToScreenPointIntInjected
 
 
-OBFUSCATE("RichTextView_<b>WorldToScreenPoint - index 1</b> - >>"),
-        AddCopyButton(_WorldToScreenPoint1.getOffset()),
+OBFUSCATE("RichTextView_<b>WorldToScreenPoint - index 0</b> - >>"),
+        AddCopyButton(_WorldToScreenPoint0.getOffset()),
 
         OBFUSCATE("RichTextView_<b>WorldToScreenPointIntInjected - index 3</b> - >>"),
         AddCopyButton(_WorldToScreenPointIntInjected3.getOffset()),
