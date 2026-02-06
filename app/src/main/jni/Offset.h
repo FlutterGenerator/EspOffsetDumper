@@ -25,7 +25,7 @@ _GetPositionInjected2 = TransformClass.dump("get_position_Injected", 2);
 
 // Unity old and New WorldToScreenPointIntInjected index 3 -> 4
 Uclass CameraClass = l2cpp.getClass("UnityEngine", "Camera");
-_WorldToScreenPoint1 = CameraClass.dump("WorldToScreenPoint_Injected", 1);
+_WorldToScreenPoint1 = CameraClass.dump("WorldToScreenPoint", 1);
 _WorldToScreenPointIntInjected3 = CameraClass.dump("WorldToScreenPoint_Injected", 3);
 _WorldToScreenPointIntInjected4 = CameraClass.dump("WorldToScreenPoint_Injected", 4);
 
