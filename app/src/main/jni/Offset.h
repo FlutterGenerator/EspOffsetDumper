@@ -16,7 +16,7 @@ l2cpp.open();
 Uclass ComponentClass = l2cpp.getClass("UnityEngine", "Component");
 _Transform = ComponentClass.dump("get_transform", 0);
 
-// Unity old and New GetPositionInjected index 0 -> 4
+// Unity old and New GetPositionInjected GetPosition index 0 -> index 1 -> 2
 Uclass TransformClass = l2cpp.getClass("UnityEngine", "Transform");
 _GetPosition1 = TransformClass.dump("get_position", 0);
 _GetPositionInjected1 = TransformClass.dump("get_position_Injected", 1);
