@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
         // Toast.makeText(MainActivity.this, "Error. Game's main activity does not exist",
         // Toast.LENGTH_LONG).show();
         e.printStackTrace();
-        return;
       }
     }
   }
@@ -79,7 +78,6 @@ public class MainActivity extends Activity {
             }
           },
           5000);
-      return;
     } else {
       final Handler handler = new Handler();
       handler.postDelayed(
